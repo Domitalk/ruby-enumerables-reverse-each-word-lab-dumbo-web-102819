@@ -1,9 +1,8 @@
 def reverse_each_word(sentence)
-  temp_string = ""
-  temp_array = sentence.split(" ")
-  temp_array.each { |index|
-    not_yet = temp_array[index]
-    temp_string = temp_string + " " + not_yet.reverse
-  }
-  temp_string
-end
+  original_array = string.split(" ")
+  return_array = []
+  original_array.each do|string|
+    return_array << string.reverse
+  end
+  return_array.join(" ")
+end 
