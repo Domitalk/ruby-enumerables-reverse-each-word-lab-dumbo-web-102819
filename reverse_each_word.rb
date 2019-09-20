@@ -1,6 +1,6 @@
-def reverse_each_word(string)
+def reverse_each_word(sentence)
   temp_string = ''
-  temp_array = string.split(/ /)
+  temp_array = sentence.split(" ")
   temp_array.each { |index|
     temp_string.push(temp_array[index].reverse)
   }
